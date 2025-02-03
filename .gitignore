@@ -9,3 +9,11 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
+.idea/.gitignore
+.idea/editor.xml
+.idea/git_toolbox_blame.xml
+.idea/material_theme_project_new.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/Prueba.iml
+.vscode/tasks.json

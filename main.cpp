@@ -1,24 +1,23 @@
 #include "Cat.h"
+#include "Dog.h"
+#include "Bird.h"
 
 int main() {
-    // Crear un objeto de Cat
-    Cat myCat("Michi", 3, "Blanco");
+    Cat myCat(2, "vaquita", 3, 5.7);
+    Dog myDog(12, "trapeador", 5.6);
+    Bird myBird(2, "Rojo", "Perico");
 
-    // Mostrar información inicial
-    myCat.showInfo();
+    cout << "El peso de mi gatito es " << myCat.damePeso() << endl;
+    myCat.meow();
+    myCat.dormido();
 
-    cout << "-----------------" << endl;
+    cout << "----------------------" << endl;
 
-    // Modificar valores con setters
-    myCat.setName("Garfield");
-    myCat.setAge(5);
-    myCat.setColor("Naranja");
+    myDog.guau();
+    myDog.sentarse();
 
-    // Mostrar información actualizada
-    myCat.showInfo();
-
-    // Probar getter
-    cout << "Nombre del gato: " << myCat.getName() << endl;
-
+    cout << "----------------------" << endl;
+    myBird.pico();
+    cout << "La especie de mi pajarito es " << myBird.dameRaza() << " y su color es " << myBird.color << endl;
     return 0;
 }

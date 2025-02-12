@@ -6,18 +6,32 @@
 using namespace std;
 
 class Cat {
-public:
-    int age;
-    string color;
-    int patitas;
-    float peso;
+    private:
+        int age;
+        string color;
+        int patitas;
+        float peso;
+    public:
+        // Constructor
+        Cat(int age, string color, int patitas, float peso);
+        
+        // Destructor
+        ~Cat();
+        
+        // Getters y Setters
+        void setAge(int);
+        int getAge(void);
+        void setColor(string);
+        string getColor(void);
+        void setPatitas(int);
+        int getPatitas(void);
+        void setPeso(float);
+        float getPeso(void);
 
-    Cat(int catAge, string catColor, int catPatitas, float catPeso);
-    ~Cat();
-
-    void meow();
-    float damePeso();
-    void dormido();
+        // Metodos adicionales
+        void meow();
+        float damePeso();
+        void dormido();
 };
 
 #endif

@@ -12,6 +12,10 @@ int main() {
     myCat.dormido();
 
     cout << "----------------------" << endl;
+    cout << myCat.getAge() << endl;
+    myCat.setAge(12);
+    cout << myCat.getAge() << endl;
+    cout << "----------------------" << endl;
 
     myDog.guau();
     myDog.sentarse();

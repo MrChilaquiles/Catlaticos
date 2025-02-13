@@ -12,7 +12,11 @@ class Cat {
         int patitas;
         float peso;
     public:
-        // Constructor
+        // Constructores
+        Cat();
+        Cat(int age);
+        Cat(int age, string color);
+        Cat(int age, string color, int patitas);
         Cat(int age, string color, int patitas, float peso);
         
         // Destructor

@@ -1,6 +1,25 @@
 #include "Cat.h"
 
-// Constructor
+// Constructores
+Cat::Cat(){
+    
+}
+
+Cat::Cat(int age) {
+    this->age = age;
+}
+
+Cat::Cat(int age, string color) {
+    this->age = age;
+    this->color = color;
+}
+
+Cat::Cat(int age, string color, int patitas) {
+    this->age = age;
+    this->color = color;
+    this->patitas = patitas;
+}
+
 Cat::Cat(int age, string color, int patitas, float peso) {
     this->age = age;
     this->color = color;

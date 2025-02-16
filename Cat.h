@@ -7,35 +7,35 @@ using namespace std;
 
 class Cat {
     private:
+        string name;
         int age;
         string color;
-        int patitas;
         float peso;
     public:
         // Constructores
         Cat();
-        Cat(int age);
-        Cat(int age, string color);
-        Cat(int age, string color, int patitas);
-        Cat(int age, string color, int patitas, float peso);
+        Cat(string name);
+        Cat(string name, int age);
+        Cat(string name, int age, string color);
+        Cat(string name, int age, string color, float peso);
         
         // Destructor
         ~Cat();
         
         // Getters y Setters
+        void setName(string);
+        string getName(void);
         void setAge(int);
         int getAge(void);
         void setColor(string);
         string getColor(void);
-        void setPatitas(int);
-        int getPatitas(void);
         void setPeso(float);
         float getPeso(void);
 
         // Metodos adicionales
         void meow();
-        float damePeso();
         void dormido();
+        void showInf();
 };
 
 #endif

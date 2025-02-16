@@ -2,7 +2,10 @@
 
 // Constructores
 Cat::Cat(){
-    
+    age = 1;
+    color = "naranjoso";
+    patitas = 3;
+    peso = 8.23;
 }
 
 Cat::Cat(int age) {

@@ -23,13 +23,13 @@ class Cat {
         ~Cat();
         
         // Getters y Setters
-        void setName(string);
+        void setName(string name);
         string getName(void);
-        void setAge(int);
+        void setAge(int age);
         int getAge(void);
-        void setColor(string);
+        void setColor(string color);
         string getColor(void);
-        void setPeso(float);
+        void setPeso(float peso);
         float getPeso(void);
 
         // Metodos adicionales
